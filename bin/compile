@@ -69,6 +69,7 @@ then
     echo " done"
 
     echo -n "       Installing Pygments..."
+    virtualenv --no-site-packages . 
     pip install --use-mirrors pygments > /dev/null 2>&1
     echo " done"
 fi
